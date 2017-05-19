@@ -21,7 +21,7 @@ public class Jeopardy extends EasyApp {
 
     //Topic buttons and score declaration
     private final TextField tScoreteam1 = addTextField("0", 1720, 50, 200, 30, this); //Score counter for team one
-    private final TextField tScoreteam2 = addTextField(0, 1720, 50, 200, 30, this); //Score counter for team two
+    private final TextField tScoreteam2 = addTextField("0", 1720, 50, 200, 30, this); //Score counter for team two
     private final Button bLeaders = addButton("Leaders", 274, 100, 250, 100, this); //Topic button for Leaders category
     private final Button bReligion = addButton("Religion", 548, 100, 250, 100, this); //Topic button for Religion category
     private final Button bTimeperiods = addButton("Time Periods", 822, 100, 250, 100, this); //Topic button for Timeperiods category
@@ -245,7 +245,7 @@ public class Jeopardy extends EasyApp {
             bPlayAgain.setEnabled(false);
             score = 0;
         }
-        tScore.setText(score + "");
+        tScoreteam1.setText(score + "");
     }
 
     private void importantdates() {
